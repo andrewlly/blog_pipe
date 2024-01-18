@@ -1,0 +1,32 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id:  987709227897-c7nj5pgs1t4e68q26slqf5prtabhhe7n.apps.googleusercontent.com
+            client-secret: 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
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          google:
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            user-name-attribute: sub
+  datasource:
+    url: jdbc:mysql://google/blog?cloudSqlInstance=zenith-blog-pipe:us-central1:blog-database
+    username: blog-connect
+    password: N|/R(,XD4%fa;ck~
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 5
+    properties:
+      socketFactory: com.google.cloud.sql.mysql.SocketFactory
+      cloudSqlInstance: zenith-blog-pipe:us-central1:blog-database
+google:
+  cloud:
+    storage:
+      credentials:
+        path: zenith-blog-pipe-28715d58597f.json

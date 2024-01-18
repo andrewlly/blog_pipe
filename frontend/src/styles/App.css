@@ -1,0 +1,15 @@
+.app {
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .app-container {
+        width: 100%;
+    }
+}
+    

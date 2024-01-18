@@ -1,0 +1,29 @@
+.create-post-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+.create-post-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.editor-container {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.submit-button {
+  margin-top: 1rem;
+}
+
+.not-authorized-container {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
